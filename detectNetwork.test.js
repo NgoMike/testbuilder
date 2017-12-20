@@ -447,7 +447,7 @@ describe('should support Switch', function () {
     expect(detectNetwork('4905345323492345123')).to.equal('Switch');
   });
 
-   it('has a prefix of 4911 and a length of 16', function () {
+  it('has a prefix of 4911 and a length of 16', function () {
     expect(detectNetwork('4911345323492345')).to.equal('Switch');
   });
 
@@ -458,6 +458,19 @@ describe('should support Switch', function () {
   it('has a prefix of 4911 and a length of 19', function () {
     expect(detectNetwork('4911345323492345123')).to.equal('Switch');
   });
+
+  it('has a prefix of 4936 and a length of 16', function () {
+    expect(detectNetwork('4936345323492345')).to.equal('Switch');
+  });
+
+  it('has a prefix of 4936 and a length of 18', function () {
+    expect(detectNetwork('493634532349234568')).to.equal('Switch');
+  });
+
+  it('has a prefix of 4936 and a length of 19', function () {
+    expect(detectNetwork('4936345323492345123')).to.equal('Switch');
+  });
+
 
    it('has a prefix of 564182 and a length of 16', function () {
     expect(detectNetwork('5641825323492345')).to.equal('Switch');
